@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="480.0" prefWidth="320.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.deadlock.aiehbarril.controller.RegisterCourseController">
+   <children>
+      <TextField fx:id="professor" layoutX="16.0" layoutY="338.0" prefHeight="33.0" prefWidth="291.0" promptText="Insira o professor(a).." />
+      <Text layoutX="16.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Professor(a)" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="76.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="alias" layoutX="15.0" layoutY="280.0" prefHeight="33.0" prefWidth="291.0" promptText="Insira a disciplina..." />
+      <Text layoutX="15.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disciplina" />
+      <Button fx:id="register" layoutX="110.0" layoutY="415.0" minWidth="100.0" mnemonicParsing="false" onAction="#handleRegister" style="-fx-background-color: #000000;" text="Cadastrar" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#333333" layoutX="16.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe a disciplina e o professor que a leciona para continuar a avaliação" textAlignment="CENTER" wrappingWidth="291.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

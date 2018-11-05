@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="480.0" prefWidth="320.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.deadlock.aiehbarril.controller.RateCourseController">
+   <children>
+      <Canvas height="41.0" layoutX="9.0" layoutY="154.0" width="300.0" />
+      <AnchorPane prefHeight="41.0" prefWidth="320.0" style="-fx-background-color: #333333;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="279.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/more.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="14.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleCourseProfile" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children></AnchorPane>
+      <Button layoutX="109.0" layoutY="436.0" minWidth="100.0" mnemonicParsing="false" onAction="#handleLastStepRating" style="-fx-background-color: #000000;" text="Próximo" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="10.0" layoutY="51.0" prefHeight="83.0" prefWidth="300.0" style="-fx-background-color: #a2a2a2;" />
+      <AnchorPane layoutX="10.0" layoutY="49.0" prefHeight="83.0" prefWidth="297.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="headAlias" layoutX="19.0" layoutY="14.0" text="Cálculo III" textFill="#565656">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="headProfessor" layoutX="21.0" layoutY="42.0" text="Edson Araújo" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="191.0" prefHeight="240.0" prefWidth="300.0" style="-fx-background-color: #a2a2a2;">
+         <children>
+            <ScrollPane layoutX="-2.0" layoutY="-1.0" prefHeight="240.0" prefWidth="300.0">
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="298.0">
+                     <children>
+                        <Circle fill="GREY" layoutX="7.0" layoutY="21.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <Circle fill="#565656" layoutX="76.0" layoutY="22.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <Circle fill="#333333" layoutX="141.0" layoutY="23.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <Circle fill="#141414" layoutX="201.0" layoutY="24.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <Circle layoutX="252.0" layoutY="25.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <Label layoutX="20.0" layoutY="15.0" text="NENHUM">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="93.0" layoutY="16.0" text="POUCO">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="159.0" layoutY="17.0" text="MÉDIO">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="216.0" layoutY="18.0" text="BOM">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="265.0" layoutY="18.0" text="MUITO">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="41.0" text="Label" />
+                        <AnchorPane layoutX="2.0" layoutY="58.0" prefHeight="13.0" prefWidth="297.0">
+                           <children>
+                              <ToggleButton fx:id="a1" layoutX="16.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="q1" />
+                                 </toggleGroup>
+                              </ToggleButton>
+                              <ToggleButton fx:id="a2" layoutX="62.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q1" />
+                              <ToggleButton fx:id="a3" layoutX="107.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q1" />
+                              <ToggleButton fx:id="a4" layoutX="153.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q1" />
+                              <ToggleButton fx:id="a5" layoutX="198.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q1" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="20.0" layoutY="103.0" text="Label" />
+                        <AnchorPane layoutX="2.0" layoutY="120.0" prefHeight="13.0" prefWidth="297.0">
+                           <children>
+                              <ToggleButton fx:id="a1" layoutX="16.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="q2" />
+                                 </toggleGroup>
+                              </ToggleButton>
+                              <ToggleButton fx:id="a2" layoutX="62.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q2" />
+                              <ToggleButton fx:id="a3" layoutX="107.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q2" />
+                              <ToggleButton fx:id="a4" layoutX="153.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q2" />
+                              <ToggleButton fx:id="a5" layoutX="198.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q2" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="21.0" layoutY="166.0" text="Label" />
+                        <AnchorPane layoutX="2.0" layoutY="183.0" prefHeight="13.0" prefWidth="297.0">
+                           <children>
+                              <ToggleButton fx:id="a1" layoutX="16.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="q3" />
+                                 </toggleGroup>
+                              </ToggleButton>
+                              <ToggleButton fx:id="a2" layoutX="62.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q3" />
+                              <ToggleButton fx:id="a3" layoutX="107.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q3" />
+                              <ToggleButton fx:id="a4" layoutX="153.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q3" />
+                              <ToggleButton fx:id="a5" layoutX="198.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q3" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="2.0" layoutY="245.0" prefHeight="13.0" prefWidth="297.0">
+                           <children>
+                              <ToggleButton fx:id="a1" layoutX="16.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="q4" />
+                                 </toggleGroup>
+                              </ToggleButton>
+                              <ToggleButton fx:id="a2" layoutX="62.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q4" />
+                              <ToggleButton fx:id="a3" layoutX="107.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q4" />
+                              <ToggleButton fx:id="a4" layoutX="153.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q4" />
+                              <ToggleButton fx:id="a5" layoutX="198.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q4" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="20.0" layoutY="228.0" text="Label" />
+                        <AnchorPane layoutX="1.0" layoutY="306.0" prefHeight="13.0" prefWidth="297.0">
+                           <children>
+                              <ToggleButton fx:id="a1" layoutX="16.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="q5" />
+                                 </toggleGroup>
+                              </ToggleButton>
+                              <ToggleButton fx:id="a2" layoutX="62.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q5" />
+                              <ToggleButton fx:id="a3" layoutX="107.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q5" />
+                              <ToggleButton fx:id="a4" layoutX="153.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q5" />
+                              <ToggleButton fx:id="a5" layoutX="198.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q5" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="20.0" layoutY="289.0" text="Label" />
+                        <Label layoutX="19.0" layoutY="351.0" text="Label" />
+                        <AnchorPane layoutX="1.0" layoutY="368.0" prefHeight="13.0" prefWidth="297.0">
+                           <children>
+                              <ToggleButton fx:id="a1" layoutX="16.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="q6" />
+                                 </toggleGroup>
+                              </ToggleButton>
+                              <ToggleButton fx:id="a2" layoutX="62.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q6" />
+                              <ToggleButton fx:id="a3" layoutX="107.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q6" />
+                              <ToggleButton fx:id="a4" layoutX="153.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q6" />
+                              <ToggleButton fx:id="a5" layoutX="198.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="39.0" toggleGroup="$q6" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="9.0" layoutY="154.0" prefHeight="20.0" prefWidth="291.0" style="-fx-background-color: #eeeeee;">
+         <children>
+            <Label layoutX="6.0" layoutY="6.0" text="+ informações" />
+            <Label layoutX="249.0" layoutY="8.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="480.0" prefWidth="320.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.deadlock.aiehbarril.controller.SearchCourseController">
+   <children>
+      <ListView fx:id="drop_results" layoutX="15.0" layoutY="256.0" maxHeight="125.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="291.0" />
+      <TextField fx:id="search" layoutX="15.0" layoutY="224.0" onAction="#handleSearch" prefHeight="33.0" prefWidth="291.0" promptText="Insira a disciplina..." />
+      <Text layoutX="15.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disciplina" />
+      <Hyperlink layoutX="65.0" layoutY="402.0" onAction="#handleRegisterCourse" text="Cadastre ou solicite avaliação" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="70.0" layoutY="392.0" text="Não encontrou o que queria?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="76.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="447.0" prefHeight="33.0" prefWidth="321.0" style="-fx-background-color: #000000;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleAbout" prefHeight="33.0" prefWidth="321.0" style="-fx-background-color: #000000;">
+               <graphic>
+                  <AnchorPane prefHeight="27.0" prefWidth="217.0">
+                     <children>
+                        <Label layoutX="106.0" layoutY="6.0" text="SOBRE O APLICATIVO" textFill="WHITE" />
+                        <ImageView fitHeight="20.0" fitWidth="21.0" layoutX="83.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/info_white.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

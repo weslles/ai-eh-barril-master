@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="480.0" prefWidth="320.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.deadlock.aiehbarril.controller.AboutController">
+   <children>
+      <AnchorPane prefHeight="41.0" prefWidth="320.0" style="-fx-background-color: #333333;">
+         <children>
+            <Button layoutX="14.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleSearchCourse" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children></AnchorPane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="11.0" layoutY="47.0" prefHeight="420.0" prefWidth="299.0" vbarPolicy="NEVER">
+         <content>
+            <AnchorPane prefHeight="419.0" prefWidth="303.0" style="-fx-background-color: #a2a2a2;">
+               <children>
+                  <AnchorPane prefHeight="419.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Label layoutX="19.0" layoutY="14.0" text="Sobre" textFill="#565656">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="13.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="É comum no início de período, mas especificamente no período de matrícula, os alunos procurarem veteranos para saber que disciplinas colocar. Em geral, o que querem saber é se uma disciplina pode ser deixada pra depois e se ela é de boa ou não. A primeira pergunta é respondida pela grade do curso. A segunda é respondidainformalmente, e de forma pessoal, por um colega que já pagou a disciplina.Isso não é muito preciso pois os poucos alunos consultados podem ter opinião destoante da maioria. O que pretendemos é centralizar neste aplicativo, as impressões de diversos alunos sobre as disciplinas para auxiliar o aluno que ainda não pagou a disciplina a obter uma média da opinião dos colegas que já pagaram. O aplicativo apresenta um parâmetro geral, se ‘Eh barril’ ou ‘Eh de boa’, e outros parâmetros específicos como: Cobra falta?, Tira dúvidas?, ‘Têm didática?’, etc." textAlignment="JUSTIFY" wrappingWidth="263.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

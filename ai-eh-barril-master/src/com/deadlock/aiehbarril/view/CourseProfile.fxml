@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="480.0" prefWidth="320.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.deadlock.aiehbarril.controller.CourseProfileController">
+   <children>
+      <AnchorPane prefHeight="41.0" prefWidth="320.0" style="-fx-background-color: #333333;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="279.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/more.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="8.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleSearchCourse" prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: #333333;">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></AnchorPane>
+      <Button layoutX="109.0" layoutY="436.0" minWidth="100.0" mnemonicParsing="false" onAction="#handleEvaluate" style="-fx-background-color: #000000;" text="Avaliar" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="10.0" layoutY="51.0" prefHeight="131.0" prefWidth="300.0" style="-fx-background-color: #a2a2a2;" />
+      <AnchorPane layoutX="10.0" layoutY="49.0" prefHeight="131.0" prefWidth="297.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="lbl_headAlias" layoutX="19.0" layoutY="14.0" text="Cálculo III" textFill="#565656">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_headProfessor" layoutX="21.0" layoutY="42.0" text="Edson Araújo" />
+            <Label fx:id="lbl_numVotos" layoutX="26.0" layoutY="78.0" text="NUM votos" />
+            <ProgressBar layoutX="21.0" layoutY="97.0" prefHeight="27.0" prefWidth="256.0" progress="0.0" />
+            <Label fx:id="lbl_porcentagemEhBarril" layoutX="114.0" layoutY="102.0" text="porcentagem" />
+            <ImageView fitHeight="89.0" fitWidth="100.0" layoutX="194.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/eh-de-boa.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="211.0" prefHeight="220.0" prefWidth="300.0" style="-fx-background-color: #a2a2a2;" />
+      <AnchorPane layoutX="14.0" layoutY="191.0" prefHeight="235.0" prefWidth="297.0" style="-fx-background-color: #f8f8f8;">
+         <children>
+            <AnchorPane layoutX="-2.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #eeeeee;">
+               <children>
+                  <Label layoutX="6.0" layoutY="6.0" text="+ informações" />
+                  <Label layoutX="249.0" layoutY="8.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="2.0" layoutY="33.0" prefHeight="20.0" prefWidth="291.0" style="-fx-background-color: #eeeeee;">
+               <children>
+                  <Label layoutX="6.0" layoutY="6.0" text="Tem Domínio do Conteúdo" />
+                  <Label fx:id="lbl_media_explanation" layoutX="205.0" layoutY="6.0" style="-fx-background-color: #000000;" text="NUM" textFill="#f5f5f5" />
+                  <Label fx:id="lbl_media_explanation_text" layoutX="249.0" layoutY="8.0" style="-fx-background-color: #000000;" text="Label" textFill="#f8f5f5" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="2.0" layoutY="64.0" prefHeight="20.0" prefWidth="291.0" style="-fx-background-color: #eeeeee;">
+               <children>
+                  <Label layoutX="6.0" layoutY="6.0" text="Cobra Falta" />
+                  <Label fx:id="lbl_media_presence" layoutX="205.0" layoutY="6.0" style="-fx-background-color: #000000;" text="NUM" textFill="#f5f5f5" />
+                  <Label fx:id="lbl_media_presence_text" layoutX="249.0" layoutY="8.0" style="-fx-background-color: #000000;" text="Label" textFill="#f8f5f5" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="2.0" layoutY="96.0" prefHeight="20.0" prefWidth="291.0" style="-fx-background-color: #eeeeee;">
+               <children>
+                  <Label layoutX="6.0" layoutY="6.0" text="Prova Difícil" />
+                  <Label fx:id="lbl_media_examDificulty" layoutX="205.0" layoutY="6.0" style="-fx-background-color: #000000;" text="NUM" textFill="#f5f5f5" />
+                  <Label fx:id="lbl_media_examDificulty_text" layoutX="249.0" layoutY="8.0" style="-fx-background-color: #000000;" text="Label" textFill="#f8f5f5" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="2.0" layoutY="127.0" prefHeight="17.0" prefWidth="291.0" style="-fx-background-color: #eeeeee;">
+               <children>
+                  <Label layoutX="6.0" layoutY="6.0" text="Tira dúvida dos alunos" />
+                  <Label fx:id="lbl_media_free_to_answers" layoutX="205.0" layoutY="6.0" style="-fx-background-color: #000000;" text="NUM" textFill="#f5f5f5" />
+                  <Label fx:id="lbl_media_free_to_answers_text" layoutX="249.0" layoutY="8.0" style="-fx-background-color: #000000;" text="Label" textFill="#f8f5f5" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="2.0" layoutY="158.0" prefHeight="17.0" prefWidth="291.0" style="-fx-background-color: #eeeeee;">
+               <children>
+                  <Label layoutX="6.0" layoutY="6.0" text="Passa Trabalho" />
+                  <Label fx:id="lbl_media_projects" layoutX="205.0" layoutY="6.0" style="-fx-background-color: #000000;" text="NUM" textFill="#f5f5f5" />
+                  <Label fx:id="lbl_media_projects_text" layoutX="249.0" layoutY="8.0" style="-fx-background-color: #000000;" text="Label" textFill="#f8f5f5" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="3.0" layoutY="191.0" prefHeight="17.0" prefWidth="291.0" style="-fx-background-color: #eeeeee;">
+               <children>
+                  <Label layoutX="6.0" layoutY="6.0" text="Cobra Faltas" />
+                  <Label fx:id="lbl_media_confidence" layoutX="205.0" layoutY="6.0" style="-fx-background-color: #000000;" text="NUM" textFill="#f5f5f5" />
+                  <Label fx:id="lbl_media_confidence_text" layoutX="249.0" layoutY="8.0" style="-fx-background-color: #000000;" text="Label" textFill="#f8f5f5" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
