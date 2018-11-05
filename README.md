@@ -3,10 +3,10 @@
 
 *Equipe Desenvolvedora:
 
--Brendo Cavalcante
+-Brendo Araujo Cavalcante
 
 -José Weslles da Cruz Souza
 
 -Patricia Coelho Silva
 
--Uendel Couto
+-Uendel Luiz Couto
